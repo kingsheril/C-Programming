@@ -14,4 +14,5 @@ else
 printf("Please Enter a Non Zero Integer :");
 goto repeat;
 }
+return 0;
 }
