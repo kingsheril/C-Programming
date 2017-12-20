@@ -24,18 +24,12 @@ int main(void) {
 	{
 		if(t[i]>t[i-1])
 		{
-			sum=sum+t[i]-t[i-1];
+			sum=t[i]-t[i-1];
 		}
 		if(t[i]<=t[i-1])
 		{
-		if(i==l-1) {
-			sum=sum+t[i-1]+t[i];
-			
-		}
-		else { 
-			sum=sum+t[i-1]; 
-			
-		}
+		if(i==l-1) { sum=t[i-1]+t[i]; }
+		else { sum=sum+t[i-1]; }
 		}
 		
 	}
