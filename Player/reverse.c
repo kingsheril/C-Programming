@@ -3,14 +3,14 @@
 int main(void) {
 	int i,n;
 	char s[10],rev[10];
-	printf("Enter a String :");
 	scanf("%s",s);
 	n=strlen(s);
-	for(i=0;i<strlen(s);i++)
+	for(i=n;i>=0;i--)
 {
-	rev[n]=s[i];
-	--n;
+	static x=0;
+	rev[x]=s[i];
+	x++;
+	printf("%c",s[i]);
 }
-	printf("Reversed String : %s",rev);
 	return 0;
 }
