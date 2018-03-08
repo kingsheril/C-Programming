@@ -12,6 +12,6 @@ printf(z);
 }
 if(y>z)
 printf(y);
-else if(z>x)
+else
 printf(z);
 }
